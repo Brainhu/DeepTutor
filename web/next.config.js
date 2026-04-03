@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  // Allow LAN access in development
+  allowedDevOrigins: ['192.168.1.3', '192.168.1.4'],
+
   // Move dev indicator to bottom-right corner
   devIndicators: {
     position: "bottom-right",
